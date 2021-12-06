@@ -8,9 +8,8 @@ JoystickLibrary is licensed under the 3-clause BSD license.
 Supported platforms are Windows and Linux, and you must have a compiler that supports C++11. For the C++ library, you must have cmake installed. Additional dependencies will vary by operating system.
 
 ### Windows
-This library was built and tested with MSVC 19 (Visual Studio 2015). To build the C++ library, run the following:
+This library was built and tested with MSVC 19 (Visual Studio 2015). To build the C++ library, run the following inside the cloned repo:
 ```
-cd cpp/
 mkdir build/
 cd build/
 cmake ..
@@ -18,12 +17,10 @@ cmake --build .
 ```
 You will find the built binary within src/Debug. The example application can be found within sample/Debug.
 
-To build the C# library, open up the solution file in the csharp/ folder, and compile within Visual Studio.
 
 ### Linux
-The Linux build depends on libevdev-dev. pkg-config must also be present on your system as well. To build, run:
+The Linux build depends on libevdev-dev. pkg-config must also be present on your system as well. To build, run the following in side the clones repo:
 ```
-cd cpp/
 mkdir build/
 cmake ..
 make
